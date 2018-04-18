@@ -1,0 +1,225 @@
+{
+	"elements": [{
+			"id": "element0",
+			"categoryId": "who",
+			"name": "Danny DeVito",
+			"cost": 59.94
+		},
+		{
+			"id": "element1",
+			"categoryId": "who",
+			"name": "Reba McEntire",
+			"cost": 767.76
+		},
+		{
+			"id": "element2",
+			"categoryId": "who",
+			"name": "Hugh Jackman",
+			"cost": 350.45
+		},
+		{
+			"id": "element3",
+			"categoryId": "who",
+			"name": "Ralph Macchio",
+			"cost": 59.94
+		},
+		{
+			"id": "element4",
+			"categoryId": "who",
+			"name": "Ashley Tisdell",
+			"cost": 0.95
+		},
+		{
+			"id": "element5",
+			"categoryId": "who",
+			"name": "Chuck Norris",
+			"cost": 999.99
+		},
+		{
+			"id": "element6",
+			"categoryId": "who",
+			"name": "Chris Rock",
+			"cost": 587.45
+		},
+		{
+			"id": "element7",
+			"categoryId": "who",
+			"name": "Melissa McCarthy",
+			"cost": 345.78
+		},
+		{
+			"id": "element8",
+			"categoryId": "who",
+			"name": "Sean Penn",
+			"cost": 698.23
+		},
+		{
+			"id": "element9",
+			"categoryId": "what",
+			"name": "Kangarunicorn",
+			"cost": 1698.23
+		},
+		{
+			"id": "element10",
+			"categoryId": "what",
+			"name": "Centaur",
+			"cost": 1298.23
+		},
+		{
+			"id": "element11",
+			"categoryId": "what",
+			"name": "Rubber Ducky",
+			"cost": 68.23
+		},
+		{
+			"id": "element12",
+			"categoryId": "what",
+			"name": "Komodo Dragon",
+			"cost": 348.23
+		},
+		{
+			"id": "element13",
+			"categoryId": "what",
+			"name": "Trix the rabbit",
+			"cost": 543.23
+		},
+		{
+			"id": "element14",
+			"categoryId": "what",
+			"name": "A typical donkey",
+			"cost": 746.93
+		},
+		{
+			"id": "element15",
+			"categoryId": "what",
+			"name": "A standard cockroach",
+			"cost": 43.50
+		},
+		{
+			"id": "element16",
+			"categoryId": "what",
+			"name": "wart-hog",
+			"cost": 23.76
+		},
+		{
+			"id": "element17",
+			"categoryId": "what",
+			"name": "Werewolf",
+			"cost": 2698.23
+		},
+		{
+			"id": "element18",
+			"categoryId": "where",
+			"name": "Zoe's Backyard",
+			"cost": 6543.78
+		},
+		{
+			"id": "element19",
+			"categoryId": "where",
+			"name": "Callan's Backyard",
+			"cost": 6543.78
+		},
+		{
+			"id": "element20",
+			"categoryId": "where",
+			"name": "Lauren's Backyard",
+			"cost": 6543.78
+		},
+		{
+			"id": "element21",
+			"categoryId": "where",
+			"name": "cafeteria",
+			"cost": 98.23
+		},
+		{
+			"id": "element22",
+			"categoryId": "where",
+			"name": "Atreyu's man-cave",
+			"cost": 1398.23
+		},
+		{
+			"id": "element23",
+			"categoryId": "where",
+			"name": "Rob Schneider's bath tub",
+			"cost": 8.53
+		},
+		{
+			"id": "element24",
+			"categoryId": "where",
+			"name": "The place with the stuff",
+			"cost": 1111.11
+		},
+		{
+			"id": "element25",
+			"categoryId": "where",
+			"name": "Here",
+			"cost": 453.54
+		},
+		{
+			"id": "element26",
+			"categoryId": "where",
+			"name": "Over there",
+			"cost": 856.00
+		},
+		{
+			"id": "element27",
+			"categoryId": "where",
+			"name": "In the well that Timmy was stuck in",
+			"cost": 8698.23
+		},
+		{
+			"id": "element28",
+			"categoryId": "how",
+			"name": "Chainsaws",
+			"cost": 234.54
+		},
+		{
+			"id": "element29",
+			"categoryId": "how",
+			"name": "lots of fire",
+			"cost": 2.59
+		},
+		{
+			"id": "element30",
+			"categoryId": "how",
+			"name": "fog machine",
+			"cost": 189.67
+		},
+		{
+			"id": "element31",
+			"categoryId": "how",
+			"name": "snow machine",
+			"cost": 567.34
+		},
+		{
+			"id": "element32",
+			"categoryId": "how",
+			"name": "mean machine",
+			"cost": 583.45
+		},
+		{
+			"id": "element33",
+			"categoryId": "how",
+			"name": "regular machine",
+			"cost": 0.04
+		},
+		{
+			"id": "element34",
+			"categoryId": "how",
+			"name": "acid-rain",
+			"cost": 39.86
+		},
+		{
+			"id": "element35",
+			"categoryId": "how",
+			"name": "side effects",
+			"cost": 89.43
+		},
+		{
+			"id": "element36",
+			"categoryId": "how",
+			"name": "Not-so-special effects",
+			"cost": 4234.54
+		}
+	]
+}
