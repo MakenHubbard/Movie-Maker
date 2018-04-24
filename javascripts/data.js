@@ -3,6 +3,7 @@ let categoriesArray = [];
 let elementsArray = [];
 
 const setCategories = (goryArray) => {
+  console.log(goryArray);
   categoriesArray = goryArray;
 };
 

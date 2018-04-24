@@ -7,4 +7,4 @@ const loadElements = (loadElementsData, errorElementFunction) => {
   myRequest.send();
 };
 
-module.exports = loadElements();
+module.exports = loadElements;
