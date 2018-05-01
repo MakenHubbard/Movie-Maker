@@ -1,27 +1,23 @@
 // printToDom categories
-console.log('hi');
+
 // const events = require('./events');
 const data = require('./data');
 const outputSpot = document.getElementById('main-ticket');
+const receiptSpot = document.getElementById('receiptTicket')
 // const elementOutputSpot = document.getElementByClassName('elmos')
 
 const catDomString = () => {
   const cats = data.getCategories();
   const ells = data.getElements();
-  console.log('elements',ells);
-  console.log('cats',cats);
 
   let strung = '';
   cats.forEach((category) => {
-    console.log(category);
-    strung += `<div class="category">`;
-    strung += `<div class="categoryTitle">`;
+    strung += `<div class="container-fluid">`;
     strung += `<h2>${category.categoryName}</h2>`;
-    strung += `</div>`;
 
     ells.forEach((element) => {
       if (element.categoryId === category.id) {
-        strung += `<div class="category_elements">`;
+        strung += `<div class="col-md-4">`;
         strung += `<input type="checkbox" id=${element.id}>`;
         strung += `<label for=${element.id}>${element.name}</label>`;
         strung += `</div>`;
@@ -30,12 +26,28 @@ const catDomString = () => {
     strung += `</div>`;
 
   });
-  console.log('is this empty',strung);
   return strung;
+};
+
+const receiptDom = () => {
+  const ells = data.getElements();
+  let strang = '';
+  if (checkbox.checked === element.id) {
+    strang += `<div class="returnSelected">`;
+    strang += `<p>${element.name}${element.cost}</p>`;
+    strang += `</div>`
+  };
+  return strang;
 };
 
 const printCatsToDom = () => {
   outputSpot.innerHTML = catDomString();
 };
 
-module.exports = printCatsToDom;
+const printReceiptToDom = () => {
+  receiptSpot.
+}
+
+module.exports = {
+  printCatsToDom,
+};

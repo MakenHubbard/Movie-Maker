@@ -128,7 +128,7 @@
 		{
 			"id": "element21",
 			"categoryId": "where",
-			"name": "cafeteria",
+			"name": "A handicap parking spot at Denny's",
 			"cost": 98.23
 		},
 		{
@@ -160,12 +160,6 @@
 			"categoryId": "where",
 			"name": "Over there",
 			"cost": 856.00
-		},
-		{
-			"id": "element27",
-			"categoryId": "where",
-			"name": "In the well that Timmy was stuck in",
-			"cost": 8698.23
 		},
 		{
 			"id": "element28",
