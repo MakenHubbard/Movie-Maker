@@ -17,6 +17,8 @@ h1 {
   float: right;
   margin-right: 15px;
   margin-top: 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid red;
 }
 
 
@@ -25,9 +27,9 @@ h1 {
 }
 
 .col-left {
-  float: left;
-  margin-top: 50px;
-  width: 68%;
+  align-content: left;
+  margin-top: 100px;
+  width: 60%;
   border: solid 1px red;
 }
 

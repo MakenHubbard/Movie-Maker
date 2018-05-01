@@ -1,8 +1,9 @@
 // printToDom categories
-console.log('hi');
+
 // const events = require('./events');
 const data = require('./data');
 const outputSpot = document.getElementById('main-ticket');
+const receiptSpot = document.getElementById('receiptTicket')
 // const elementOutputSpot = document.getElementByClassName('elmos')
 
 const catDomString = () => {
@@ -28,8 +29,25 @@ const catDomString = () => {
   return strung;
 };
 
+const receiptDom = () => {
+  const ells = data.getElements();
+  let strang = '';
+  if (checkbox.checked === element.id) {
+    strang += `<div class="returnSelected">`;
+    strang += `<p>${element.name}${element.cost}</p>`;
+    strang += `</div>`
+  };
+  return strang;
+};
+
 const printCatsToDom = () => {
   outputSpot.innerHTML = catDomString();
 };
 
-module.exports = printCatsToDom;
+const printReceiptToDom = () => {
+  receiptSpot.
+}
+
+module.exports = {
+  printCatsToDom,
+};
