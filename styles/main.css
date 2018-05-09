@@ -26,16 +26,25 @@ h1 {
 
 }
 
-.col-left {
-  align-content: left;
-  margin-top: 100px;
-  width: 60%;
+.content {
+  width: 100%;
+  overflow: hidden;
+}
+
+.col {
   border: solid 1px red;
 }
 
+.col-left {
+  width: 60%;
+  float: left;
+  margin-left: 10px;
+}
+
 .col-right {
-  float: right;
   width: 23%;
+  float: right;
+  margin-right: 10px;
 }
 
 .category_elements {
