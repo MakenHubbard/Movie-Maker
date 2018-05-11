@@ -28,12 +28,15 @@ const catDomString = () => {
   return strung;
 };
 
-const receiptDom = (element) => {
-  console.log(element);
+const receiptDom = (selectionsArray) => {
+  const theSelected = data.getSelections();
   let strang = '';
-  strang += `<div class="returnSelected">`;
-  strang += `<p>${element.name} ${element.cost}</p>`;
-  strang += `</div>`;
+  theSelected.forEach((selected) => {
+    strang += `<div class="returnSelected">`;
+    strang += `<p>${selected.name}</p>`;
+    strang += `<p>${selected.cost}</p>`;
+    strang += `</div>`;
+  });
   return strang;
 };
 
@@ -41,8 +44,8 @@ const printCatsToDom = () => {
   outputSpot.innerHTML = catDomString();
 };
 
-const printReceiptToDom = () => {
-  receiptSpot.innerHTML = receiptDom();
+const printReceiptToDom = (selectionsArray, element) => {
+  receiptSpot.innerHTML = receiptDom(selectionsArray);
 };
 
 module.exports = {
