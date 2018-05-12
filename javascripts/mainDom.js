@@ -1,9 +1,8 @@
 // printToDom categories
-
-// const events = require('./events');
 const data = require('./data');
+
 const outputSpot = document.getElementById('main-ticket');
-const receiptSpot = document.getElementById('receiptTicket')
+const receiptSpot = document.getElementById('receipt-ticket');
 // const elementOutputSpot = document.getElementByClassName('elmos')
 
 const catDomString = () => {
@@ -18,7 +17,7 @@ const catDomString = () => {
     ells.forEach((element) => {
       if (element.categoryId === category.id) {
         strung += `<div class="col-md-4">`;
-        strung += `<input type="checkbox" id=${element.id}>`;
+        strung += `<input class="${category.categoryName}--${element.cost}" type="checkbox" id=${element.id}>`;
         strung += `<label for=${element.id}>${element.name}</label>`;
         strung += `</div>`;
       };
@@ -29,14 +28,15 @@ const catDomString = () => {
   return strung;
 };
 
-const receiptDom = () => {
-  const ells = data.getElements();
+const receiptDom = (selectionsArray) => {
+  const theSelected = data.getSelections();
   let strang = '';
-  if (checkbox.checked === element.id) {
+  theSelected.forEach((selected) => {
     strang += `<div class="returnSelected">`;
-    strang += `<p>${element.name}${element.cost}</p>`;
-    strang += `</div>`
-  };
+    strang += `<p>${selected.name}</p>`;
+    strang += `<p>${selected.cost}</p>`;
+    strang += `</div>`;
+  });
   return strang;
 };
 
@@ -44,10 +44,12 @@ const printCatsToDom = () => {
   outputSpot.innerHTML = catDomString();
 };
 
-const printReceiptToDom = () => {
-  receiptSpot.
-}
+const printReceiptToDom = (selectionsArray, element) => {
+  receiptSpot.innerHTML = receiptDom(selectionsArray);
+};
 
 module.exports = {
   printCatsToDom,
+  receiptDom,
+  printReceiptToDom,
 };
