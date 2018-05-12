@@ -13,7 +13,7 @@ const catDomString = () => {
   cats.forEach((category) => {
     strung += `<div class="container-fluid">`;
     strung += `<h2>${category.categoryName}</h2>`;
-
+    strung += `<div id='${category.id}'>`;
     ells.forEach((element) => {
       if (element.categoryId === category.id) {
         strung += `<div class="col-md-4">`;
@@ -22,6 +22,7 @@ const catDomString = () => {
         strung += `</div>`;
       };
     });
+    strung += `</div>`;
     strung += `</div>`;
 
   });
