@@ -29,11 +29,8 @@ const setSelections = (element) => {
 };
 
 const removeSelection = (element) => {
-  console.log(element);
   const index = selectionsArray.indexOf(element);
   selectionsArray.splice(index,1);
-  console.log(selectionsArray);
-  console.log(index);
 };
 
 module.exports = {
