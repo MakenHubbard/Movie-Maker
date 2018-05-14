@@ -17,7 +17,7 @@ const catDomString = () => {
     ells.forEach((element) => {
       if (element.categoryId === category.id) {
         strung += `<div class="col-md-4">`;
-        strung += `<input class="${category.categoryName}--${element.cost}" type="checkbox" id=${element.id}>`;
+        strung += `<input class="${category.categoryName}--${element.cost}" type="checkbox" id=${element.id} box>`;
         strung += `<label for=${element.id}>${element.name}</label>`;
         strung += `</div>`;
       };
@@ -36,7 +36,7 @@ const receiptDom = (selectionsArray) => {
     strang += `<div class="returnSelected">`;
     strang += `<p>${selected.name}</p>`;
     strang += `<p>${selected.cost}</p>`;
-    strang += `<p>Select more categories!`;
+    strang += `<p>Select more categories to make this movie!`;
     strang += `</div>`;
   });
   return strang;
@@ -63,9 +63,14 @@ const printReceiptToDom = (selectionsArray, element) => {
   receiptSpot.innerHTML = receiptDom(selectionsArray);
 };
 
+const printMovieStatus = (selectionsArray, element) => {
+  receiptSpot.innerHTML = receiptDomTwo(selectionsArray);
+};
+
 module.exports = {
   printCatsToDom,
   receiptDom,
   printReceiptToDom,
   receiptDomTwo,
+  printMovieStatus,
 };

@@ -24,7 +24,6 @@ const wong = function () {
 const initializer = () => {
   loadElements(whenElementsLoad, wong);
   events.budgEvent();
-  events.processEvent();
 };
 
 module.exports = {
