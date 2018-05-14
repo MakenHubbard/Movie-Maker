@@ -1,6 +1,7 @@
 // add event listeners
 const data = require('./data');
 const doms = require('./mainDom.js');
+const progress = require('./progressBar');
 
 const userInput = document.getElementById('exampleInputAmount');
 const budgButt = document.getElementById('watchIt');
@@ -18,11 +19,42 @@ const processEvent = (e) => {
   if (e.target.checked) {
     data.setSelections(element);
     doms.receiptDom(element);
+    // progress(element);
   } else {
     data.removeSelection(element);
   };
   doms.printReceiptToDom(data.getSelections());
+  const costData = data.getSelections().reduce((totalCost, element) => {
+    return totalCost += parseInt(element.cost);
+  }, 0);
+  if (costData > parseInt(userInput.value)) {
+    overBudget();
+  };
+  // for (let i = 0; data.getSelections().length; i++) {
+  //   if (data.getSelections().length < 4) {
+  //     doms.receiptDom(element);
+  //     console.log(doms.receiptDomTwo(element));
+  //   } else {
+  //     doms.receiptDomTwo(element);
+  //   };
+  // };
+  console.log(data.getSelections());
+  progress();
+  // needAllCats();
 };
+
+const overBudget = () => {
+  document.getElementById('receipt-ticket').textContent = 'Can not make this movie';
+};
+
+// const needAllCats = (progress) => {
+//   if (progress.counter !== 4) {
+//     console.log();
+//     document.getElementById('receipt-ticket').textContent = 'Can not make this movie';
+//   } else {
+//     document.getElementById('receipt-ticket').textContent = 'You can not not make this movie';
+//   }
+// };
 
 const budgEvent = () => {
   budgButt.addEventListener('click', setBudgButt);
