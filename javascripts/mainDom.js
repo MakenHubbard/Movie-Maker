@@ -36,9 +36,23 @@ const receiptDom = (selectionsArray) => {
     strang += `<div class="returnSelected">`;
     strang += `<p>${selected.name}</p>`;
     strang += `<p>${selected.cost}</p>`;
+    strang += `<p>Select more categories!`;
     strang += `</div>`;
   });
   return strang;
+};
+
+const receiptDomTwo = (selectionsArray) => {
+  const theSelected = data.getSelections();
+  let strangz = '';
+  theSelected.forEach((selected) => {
+    strangz += `<div class="returnSelected">`;
+    strangz += `<p>${selected.name}</p>`;
+    strangz += `<p>${selected.cost}</p>`;
+    strangz += `<p>You can not not make this Movie`;
+    strangz += `</div>`;
+  });
+  return strangz;
 };
 
 const printCatsToDom = () => {
@@ -53,4 +67,5 @@ module.exports = {
   printCatsToDom,
   receiptDom,
   printReceiptToDom,
+  receiptDomTwo,
 };
