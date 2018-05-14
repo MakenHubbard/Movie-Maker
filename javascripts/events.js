@@ -27,24 +27,24 @@ const processEvent = (e) => {
   const costData = data.getSelections().reduce((totalCost, element) => {
     return totalCost += parseInt(element.cost);
   }, 0);
+  for (let i = 0; i < data.getSelections().length; i++) {
+    if (data.getSelections().length < 4) {
+      doms.receiptDom(element);
+      console.log(doms.receiptDomTwo(element));
+    } else {
+      doms.printMovieStatus(doms.receiptDomTwo(element));
+    };
+  };
   if (costData > parseInt(userInput.value)) {
     overBudget();
   };
-  // for (let i = 0; data.getSelections().length; i++) {
-  //   if (data.getSelections().length < 4) {
-  //     doms.receiptDom(element);
-  //     console.log(doms.receiptDomTwo(element));
-  //   } else {
-  //     doms.receiptDomTwo(element);
-  //   };
-  // };
   console.log(data.getSelections());
   progress();
   // needAllCats();
 };
 
 const overBudget = () => {
-  document.getElementById('receipt-ticket').textContent = 'Can not make this movie';
+  document.getElementById('receipt-ticket').textContent = 'Can not make this movie because you ran out of money fool!!!';
 };
 
 // const needAllCats = (progress) => {
