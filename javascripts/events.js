@@ -30,15 +30,15 @@ const processEvent = (e) => {
   }, 0);
   const selections = data.getSelections();
   console.log('wooohoo!!', selections.includes('Actors and Actresses'));
-  for (let i = 0; i < selections.length; i++) {
-    if (selections.category !== 'Actors and Actresses') {
-      console.log('heres johnny',selections.category);
-      doms.receiptDom(element);
-    } else {
-      doms.printMovieStatus(doms.receiptDomTwo(element));
+  // for (let i = 0; i < selections.length; i++) {
+  //   if (selections.category !== 'Actors and Actresses') {
+  //     console.log('heres johnny',selections.category);
+  //     doms.receiptDom(element);
+  //   } else {
+  //     doms.printMovieStatus(doms.receiptDomTwo(element));
 
-    };
-  };
+  //   };
+  // };
   if (costData > parseInt(userInput.value)) {
     overBudget();
   };
