@@ -4,7 +4,6 @@ let elementsArray = [];
 const selectionsArray = [];
 
 const setCategories = (goryArray) => {
-  console.log(goryArray);
   categoriesArray = goryArray;
 };
 
