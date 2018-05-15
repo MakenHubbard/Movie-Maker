@@ -4,13 +4,11 @@ body {
 }
 
 .upTop {
-  border-bottom: 1px solid red;
   margin-top: 15px;
 }
 
 h1 {
   float: left;
-  border-bottom: 2px solid red;
 }
 
 .form-group {
@@ -18,7 +16,6 @@ h1 {
   margin-right: 15px;
   margin-top: 15px;
   padding-bottom: 5px;
-  border-bottom: 2px solid red;
 }
 
 
@@ -32,7 +29,7 @@ h1 {
 }
 
 .col {
-  border: solid 1px red;
+
 }
 
 .col-left {
@@ -42,7 +39,7 @@ h1 {
 }
 
 .col-right {
-  color: red;
+  color: white;
   width: 23%;
   float: right;
   margin-right: 10px;
