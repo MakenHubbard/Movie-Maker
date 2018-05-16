@@ -48,7 +48,7 @@ const receiptDomTwo = (selectionsArray) => {
     strangz += `<div class="returnSelected">`;
     strangz += `<p>${selected.name}</p>`;
     strangz += `<p>${selected.cost}</p>`;
-    strangz += `<p id="yay">You can not NOT make this Movie`;
+    strangz += `<p id="yay">You just can not NOT make this movie now`;
     strangz += `</div>`;
   });
   return strangz;
