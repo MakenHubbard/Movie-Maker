@@ -1,5 +1,5 @@
 body {
-  background-color: plum;
+  background-color: paleturquoise;
   color: black;
 }
 
@@ -9,6 +9,18 @@ body {
 
 h1 {
   float: left;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  border-bottom: solid 10px black;
+}
+
+h2 {
+  border-bottom: solid 2px black;
+}
+
+h3 {
+  margin-left: 10px;
+  color: lightseagreen;
 }
 
 .form-group {
@@ -18,9 +30,20 @@ h1 {
   padding-bottom: 5px;
 }
 
+.returnSelected {
+  border-bottom: solid 1px blue;
+  border-left: solid 1px blue;
+  margin-top: 8px;
+  padding-left: 5px;
+}
 
-.container-fluid {
 
+#yay {
+  color: green;
+}
+
+#warn {
+  color: red;
 }
 
 .content {
@@ -39,7 +62,7 @@ h1 {
 }
 
 .col-right {
-  color: white;
+  color: black;
   width: 23%;
   float: right;
   margin-right: 10px;

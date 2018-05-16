@@ -20,7 +20,6 @@ const processEvent = (e) => {
   if (e.target.checked) {
     data.setSelections(element);
     doms.receiptDom(element);
-    // progress(element);
   } else if (e.target.checked === false && e.target.tagName === 'INPUT') {
     data.removeSelection(element);
   };
@@ -28,17 +27,7 @@ const processEvent = (e) => {
   const costData = data.getSelections().reduce((totalCost, element) => {
     return totalCost += parseInt(element.cost);
   }, 0);
-  const selections = data.getSelections();
-  console.log('wooohoo!!', selections.includes('Actors and Actresses'));
-  // for (let i = 0; i < selections.length; i++) {
-  //   if (selections.category !== 'Actors and Actresses') {
-  //     console.log('heres johnny',selections.category);
-  //     doms.receiptDom(element);
-  //   } else {
-  //     doms.printMovieStatus(doms.receiptDomTwo(element));
 
-  //   };
-  // };
   if (costData > parseInt(userInput.value)) {
     overBudget();
   };
@@ -47,17 +36,17 @@ const processEvent = (e) => {
 };
 
 const overBudget = () => {
-  document.getElementById('receipt-ticket').textContent = 'Can not make this movie because you ran out of money fool!!!';
+  document.getElementById('receipt-ticket').textContent = 'CAN NOT MAKE THIS MOVIE BECAUSE YOU RAN OUT OF MONEY FOOL !!!';
 };
 
 const budgEvent = () => {
-  budgButt.addEventListener('click', setBudgButt);
+  budgButt.addEventListener('click', setBudgButt());
 };
 
 const setBudgButt = (e) => {
   e.preventDefault();
-  const budget = userInput.value;
-  console.log(budget);
+  userInput.value;
+  // console.log(budget);
 };
 
 document.getElementById('main-ticket').addEventListener('click', processEvent);

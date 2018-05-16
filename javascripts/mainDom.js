@@ -3,7 +3,6 @@ const data = require('./data');
 
 const outputSpot = document.getElementById('main-ticket');
 const receiptSpot = document.getElementById('receipt-ticket');
-// const elementOutputSpot = document.getElementByClassName('elmos')
 
 const catDomString = () => {
   const cats = data.getCategories();
@@ -36,7 +35,7 @@ const receiptDom = (selectionsArray) => {
     strang += `<div class="returnSelected">`;
     strang += `<p>${selected.name}</p>`;
     strang += `<p>${selected.cost}</p>`;
-    strang += `<p>Select more categories to make this movie!`;
+    strang += `<p id="warn">You need to select more categories to make this movie!`;
     strang += `</div>`;
   });
   return strang;
@@ -49,7 +48,7 @@ const receiptDomTwo = (selectionsArray) => {
     strangz += `<div class="returnSelected">`;
     strangz += `<p>${selected.name}</p>`;
     strangz += `<p>${selected.cost}</p>`;
-    strangz += `<p>You can not not make this Movie`;
+    strangz += `<p id="yay">You just can not NOT make this movie now`;
     strangz += `</div>`;
   });
   return strangz;
